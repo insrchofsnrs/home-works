@@ -11,6 +11,7 @@
         <property name="name" value="Tom"/>
     </bean>
     <bean id="pet" class="by.academy.it.Pet">
+        <property name="name" value="Little Cat"/>
         <property name="person" ref="person"/>
     </bean>
 

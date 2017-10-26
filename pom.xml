@@ -15,6 +15,16 @@
   </properties>
 
   <dependencies>
+
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.16.16</version>
+    </dependency>
+
+
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -26,7 +36,5 @@
     <module>01Module</module>
     <module>02Module</module>
     <module>03Module</module>
-    <module>task01</module>
-    <module>task02</module>
   </modules>
 </project>
