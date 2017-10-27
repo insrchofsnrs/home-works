@@ -5,8 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>task01</module>
-        <module>task02</module>
+        <module>task31</module>
+        <module>task32</module>
+        <module>task34</module>
     </modules>
 
     <parent>
