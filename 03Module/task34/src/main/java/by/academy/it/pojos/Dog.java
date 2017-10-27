@@ -11,8 +11,10 @@ import org.springframework.stereotype.Component;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Dog implements IPet {
+
     @Value("Rambo")
     private String name;
+
     @Value("#{person}")
     private Person person;
 

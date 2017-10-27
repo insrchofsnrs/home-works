@@ -10,10 +10,13 @@ import org.springframework.stereotype.Component;
 @NoArgsConstructor
 @Component
 public class Person implements IPerson {
+
     @Value("Evgeny")
     private String name;
+
     @Value("28")
     private int age;
+
     @Value("#{pet}")
     private IPet pet;
 
