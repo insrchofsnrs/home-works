@@ -14,7 +14,7 @@ public class Person implements IPerson {
     @Value("Evgeny")
     private String name;
 
-    @Value("28")
+    @Value("28") //Вопрос: что сетается если тип int. long, boolean
     private int age;
 
     @Value("#{pet}")
@@ -23,4 +23,5 @@ public class Person implements IPerson {
     public String getPetName() {
         return pet.getName();
     }
+
 }

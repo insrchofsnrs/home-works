@@ -1,5 +1,6 @@
 package by.academy.it;
 
+
 import by.academy.it.pojos.Cat;
 import by.academy.it.pojos.IPet;
 import by.academy.it.pojos.Person;
@@ -11,8 +12,9 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration({"classpath:Context.xml"})
-public class TestClass {
+@ContextConfiguration(classes = {NoXmlConfiguration.class})
+public class NoXmlTestClass {
+
     @Autowired
     private Person person;
     @Autowired
@@ -27,5 +29,4 @@ public class TestClass {
     public void catTest(){
         Assert.assertEquals("Evgeny", cat.getPersonName());
     }
-
 }
