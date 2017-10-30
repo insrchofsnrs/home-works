@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <packaging>pom</packaging>
     <modules>
-        <module>task01</module>
+        <module>task11</module>
     </modules>
     <parent>
     <groupId>by.academy.it</groupId>

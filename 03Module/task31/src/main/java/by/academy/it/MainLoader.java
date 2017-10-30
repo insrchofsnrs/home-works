@@ -6,8 +6,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MainLoader {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("Context.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("newAopContext.xml");
         Pet pet = context.getBean("pet", Pet.class);
+
         System.out.println(pet.getPerson().getName());
+        pet.getName();
     }
 }

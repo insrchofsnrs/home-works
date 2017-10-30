@@ -7,10 +7,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>task01</artifactId>
+    <artifactId>task11</artifactId>
     <packaging>jar</packaging>
 
-    <name>task01</name>
+    <name>task11</name>
     <url>http://maven.apache.org</url>
 
     <properties>
