@@ -23,6 +23,8 @@ public class NoXmlConfiguration {
         //p.initPerson();
         return p;
     }
+
+
     @Bean (value = "cat",
             autowire = Autowire.BY_NAME
     )
@@ -30,11 +32,15 @@ public class NoXmlConfiguration {
         IPet cat = new Cat();
         return cat;
     }
+
+
     @Bean(value = "dog",
             autowire = Autowire.BY_NAME
     )
+
+
     public IPet dog (){
-        IPet dog = new Cat();
+        IPet dog = new Dog();
         return dog;
     }
 }
