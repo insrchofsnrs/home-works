@@ -17,24 +17,25 @@ public class MyAspect {
     @Pointcut("execution(* *.someEvent(String)) && args(name)")
     private void stringArgSomeEventMethods(String name){}
 
-    @Before("allSomeEventMethods()")
-    public void logBefore(){
-        System.out.print("Выполняется действие т.к. параметр не disable: ");
+    @Before("stringArgSomeEventMethods(name)")
+    public void logBefore(String name){
+        System.out.print("Выполняется logBefore т.к. параметр не disable: ");
     }
-    @Around("stringArgSomeEventMethods(name)")
+
+
+
+   @Around("stringArgSomeEventMethods(name)")
     public void aroundSomeEvent(ProceedingJoinPoint jp, String name){
         if (name=="disable"){
-            System.out.println("Метод не выполняется т.к. параметр disable!");
+            System.out.println("aroundSomeEvent Метод не выполняется т.к. параметр disable!");
         } else {
             try {
+                System.out.println("просто должен выполнится метод");
                 jp.proceed();
             } catch (Throwable throwable) {
                 System.out.println("Error" + throwable);
                 throwable.printStackTrace();
             }
         }
-
-
-
     }
 }

@@ -8,7 +8,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
-@Component
+@Component("work")
 @Aspect
 public class Work {
     @Pointcut("execution(* by.academy.it.aspects.TaskService.performJob())")

@@ -7,7 +7,7 @@ public class Loader {
         ApplicationContext context = new ClassPathXmlApplicationContext("my_aspect.xml");
         TestMethods bean = context.getBean("testMethods", TestMethods.class);
         bean.someEvent("что угодно толко бы не  disable");
-        bean.someEvent("disable");
+        //bean.someEvent("disable");
 
         ((ClassPathXmlApplicationContext) context).close();
     }
