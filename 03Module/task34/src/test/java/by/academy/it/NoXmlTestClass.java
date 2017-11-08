@@ -2,7 +2,6 @@ package by.academy.it;
 
 
 import by.academy.it.pojos.Cat;
-import by.academy.it.pojos.IPet;
 import by.academy.it.pojos.Person;
 import org.junit.Assert;
 import org.junit.Test;
