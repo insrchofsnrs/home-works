@@ -21,6 +21,11 @@ public class HUtil {
         return emFactory.createEntityManager();
     }
 
+    public static EntityManager getTestEntityManager() {
+        emFactory = Persistence.createEntityManagerFactory("by.academy.it.test");
+        return emFactory.createEntityManager();
+    }
+
     public static void close() {
         emFactory.close();
     }
