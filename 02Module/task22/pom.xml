@@ -7,14 +7,17 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>task21</artifactId>
+    <artifactId>task22</artifactId>
     <packaging>jar</packaging>
 
-    <name>task21</name>
+    <name>task22</name>
     <url>http://maven.apache.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+
+    </dependencies>
 </project>

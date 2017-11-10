@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>task21</module>
+        <module>task22</module>
     </modules>
     <parent>
     <groupId>by.academy.it</groupId>

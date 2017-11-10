@@ -11,7 +11,7 @@ public class TestCRUD {
     @Test
     public void saveTest() {
         Person person = new Person(null, 28, "Evgeni", "vavilkin");
-        EntityManager entityManager = HUtil.getEntityManager("by.academy.it.test");
+        EntityManager entityManager = HUtil.getTestEntityManager();
         entityManager.getTransaction().begin();
         entityManager.persist(person);
         entityManager.getTransaction().commit();
@@ -81,20 +81,18 @@ public class TestCRUD {
         entityManager.getTransaction().commit();
         entityManager.clear();
 
-        entityManager.getTransaction().begin();
-        Person perForUpdateFromDB1 = new Person();
-        perForUpdateFromDB1 = entityManager.find(Person.class, person1.getId());
+        //entityManager.getTransaction().begin();
+        Person perForUpdateFromDB1 = entityManager.find(Person.class, person1.getId());
         perForUpdateFromDB1.setAge(22);
         perForUpdateFromDB1.setName("Vasiliy");
-        entityManager.merge(perForUpdateFromDB1);
-        entityManager.getTransaction().commit();
-        entityManager.clear();
+        //entityManager.merge(perForUpdateFromDB1);
+        //entityManager.getTransaction().commit();
+        //entityManager.clear();
 
-        entityManager.getTransaction().begin();
-        Person perFromDB1 = new Person();
-        perFromDB1 = entityManager.find(Person.class, person1.getId());
+        //entityManager.getTransaction().begin();
+        Person perFromDB1 = entityManager.find(Person.class, person1.getId());
 
         HUtil.close();
-        Assert.assertEquals(22,perFromDB1.getAge());
+        Assert.assertEquals(person1,perFromDB1);
     }
 }
