@@ -6,6 +6,7 @@
     <modules>
         <module>task21</module>
         <module>task22</module>
+        <module>task23</module>
     </modules>
     <parent>
     <groupId>by.academy.it</groupId>
