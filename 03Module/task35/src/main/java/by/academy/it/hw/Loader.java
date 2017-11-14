@@ -9,7 +9,6 @@ public class Loader {
         bean.someEvent("что угодно толко бы не  disable");
         //bean.someEvent("disable");
         //bean.someEvent(1,2l);
-
         ((ClassPathXmlApplicationContext) context).close();
     }
 }

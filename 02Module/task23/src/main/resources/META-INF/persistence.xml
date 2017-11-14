@@ -6,7 +6,7 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>by.academy.it.Doc</class>
         <class>by.academy.it.Person</class>
-        <class>by.academy.it.Cat</class>
+        <class>by.academy.it.tables.Cat</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
@@ -27,7 +27,7 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>by.academy.it.Doc</class>
         <class>by.academy.it.Person</class>
-        <class>by.academy.it.Cat</class>
+        <class>by.academy.it.tables.Cat</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>

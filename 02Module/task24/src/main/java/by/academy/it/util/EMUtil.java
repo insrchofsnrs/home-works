@@ -1,4 +1,4 @@
-package by.academy.it;
+package by.academy.it.util;
 
 import org.hibernate.SessionFactory;
 

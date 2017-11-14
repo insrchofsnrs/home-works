@@ -4,13 +4,17 @@
              version="2.0">
     <persistence-unit name="by.academy.it" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>by.academy.it.Person</class>
-        <class>by.academy.it.Cat</class>
+       <!-- <class>by.academy.it.tables.Animal</class>
+        <class>by.academy.it.tables.Bird</class>
+        <class>by.academy.it.tables.Cat</class>-->
+        <class>by.academy.it.withkeys.Animal</class>
+        <class>by.academy.it.withkeys.Bird</class>
+        <class>by.academy.it.withkeys.Cat</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url"
-                      value="jdbc:mysql://localhost:3306/mysql3?createDatabaseIfNotExist=true"/>
+                      value="jdbc:mysql://localhost:3306/mysqltest?createDatabaseIfNotExist=true"/>
             <property name="javax.persistence.jdbc.user" value="root"/>
             <property name="javax.persistence.jdbc.password" value="root"/>
             <property name="hibernate.dialect.storage_engine" value="innodb"/>
@@ -24,8 +28,12 @@
 
     <persistence-unit name="by.academy.it.test" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>by.academy.it.Person</class>
-        <class>by.academy.it.Cat</class>
+  <!--      <class>by.academy.it.tables.Animal</class>
+        <class>by.academy.it.tables.Bird</class>
+        <class>by.academy.it.tables.Cat</class>-->
+        <class>by.academy.it.withkeys.Animal</class>
+        <class>by.academy.it.withkeys.Bird</class>
+        <class>by.academy.it.withkeys.Cat</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
